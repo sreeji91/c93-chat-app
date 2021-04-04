@@ -1,0 +1,46 @@
+
+
+<html>
+
+    <head>
+        <title>Let's Chat!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Shadows+Into+Light+Two&display=swap"
+            rel="stylesheet">
+    </head>
+    
+    <body>
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger"
+            style="font-size: 20px; float: right; margin: 5px;" onclick="logout();">
+            Logout</button>
+        <center>
+            
+            <img style="float: left; padding: 10px; cursor: pointer;" src="https://cdn1.iconfinder.com/data/icons/interface-4/96/Back-512.png" onclick="back();" height="70px" width="70px">
+            <h1>Let's Chat!
+                <sup>
+                    <img src="Icon.png">
+                </sup>
+            </h1>
+            <h2 id="Roomname">
+                </h3>
+                <h3 id="output" class="room_name"></h3>
+                <div style="margin-top: 27%;">
+                    <input id="msg" type="text" class="form-control" placeholder="Type your message..."
+                        style="width:50%; margin-bottom: 10px;">
+                    <button class="button" type="submit" onclick="Send();"
+                        style=" height: fit-content; font-size: 20px; width: 30%;">Send</button>
+                </div>
+        </center>
+        <script src="Chat_Place.js"></script>
+    </body>
+    
+    </html>
